@@ -1,0 +1,56 @@
+.nav-wrapper {
+    padding: 0 2rem;
+}
+nav{
+    background-color: #243851;
+} 
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+    padding: 5px 0;
+    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    top: -20px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+}
+.price {
+    font-size: 2rem;
+    color: #0089a1
+}
+
+.course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course h1{
+    margin-bottom: 2rem;
+}
+
+.course img{
+    min-width: 600px;
+    height: auto;
+}
+
+.course .price.big{
+    font-size: 2.5rem
+}
+
+.card-action.action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basket__img {
+    width: 50px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    justify-content: space-between;
+}

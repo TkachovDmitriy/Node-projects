@@ -1,0 +1,35 @@
+<h1>Basket</h1>
+<div id="card">
+    {{#if courses.length}}
+    <table>
+        <thead>
+            <tr>
+                <th>Picture</th>
+                <th>Name</th>
+                <th>Count</th>
+                <th>Do</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {{#each courses}}
+            <tr>
+                <td><img class="basket__img" src="{{img}}" alt="{{title}}"></td>
+                <td>{{title}}</td>
+                <td>{{count}}</td>
+                <td><button class="btn btn-small red js-delete" data-id="{{id}}">x</button></td>
+            </tr>
+
+            {{/each}}
+        </tbody>
+    </table>
+    <p><strong>Value:</strong> <span class="price"> {{price}}</span> </p>
+    <form action="/orders" method="POST">
+    
+    <button type="submit" class="btn btn-primary">Send Order</button>
+    </form>
+
+    {{else}}
+    <p>Basket is empty </p>
+    {{/if}}
+</div>
